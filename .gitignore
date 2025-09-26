@@ -1,0 +1,74 @@
+# 🔒 Informações Sensíveis - NÃO MÓSTRAR NO GIT
+
+# 📁 Diretórios com Dados Sensíveis
+Projecto/webui_data/
+Projecto/pgdata/
+Projecto/ollama/
+*.env
+.env.*
+
+# 🔑 Chaves e Credenciais
+**/id_ed25519*
+**/*_rsa*
+*.pem
+*.key
+*.crt
+*.pfx
+
+# 👨‍💻 Configurações de Desenvolvimento
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/tasks.json
+
+# 🗄️ Arquivos de Dados Pessoais
+*.log
+*.sql
+*.dump
+*.db
+*.db-*
+
+# 🐳 Dados Docker Persistente
+docker-volume/
+*.tar
+
+# 🔒 Arquivos Backup Sensíveis
+*_original.*
+*.backup
+backups_security/
+security_backups/
+*_sensitive_backup*
+
+# 📊 Dados de Exemplo
+example.*
+test-data/
+sample-data/
+
+# 🔧 Secrets de Configuração
+secrets/
+config/secret*
+**/secret-*
+**/private-*
+
+# 🚫 Arquivos de Sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# 💻 Arquivos Temporários
+*.tmp
+*.temp
+*_cache/
+
+# 🔎 Lint
+.cache
+node_modules/
+__pycache__/
+*.pyc
+
+# 🤖 Modelos Pesados (opcional - boa prática de ignorar modelos grandes)
+Projecto/ollama/models/*.bin
+Projecto/ollama/models/*.safetensors
+Projecto/ollama/models/*.gguf
